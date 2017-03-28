@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_marker_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memorycreat.memorycreator.MarkerInfoActivity"
+    android:background="#F0F4C3">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:id="@+id/all_fields">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/calendar_icon_resized"
+        android:onClick="showDatePickerDialog"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select the date above."
+        android:id="@+id/tw_date"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="@color/cardview_light_background"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    </LinearLayout>
+    <!--android:layout_marginTop="190dp"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/scroll_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/all_fields">
+
+        <EditText
+            android:id="@+id/impressions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:hint="@string/impressions"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="20sp"
+                    />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:textSize="16sp"
+            android:background="#546E7A"
+            android:textColor="#CFD8DC"
+            android:onClick="saveInfo"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:textSize="16sp"
+            android:background="#546E7A"
+            android:textColor="#CFD8DC"
+            android:onClick="deleteInfo"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

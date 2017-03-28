@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MemoryCreator</string>
+    <string name="title_activity_maps_render">Maps</string>
+    <string name="memories">Your Memories</string>
+    <string name="impressions">Your Impressions</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="content_authority">com.memorycreat.memorycreator</string>
+    <string name="title_activity_detail">Your Thoughts</string>
+    <string name="action_share">Share</string>
+</resources>
